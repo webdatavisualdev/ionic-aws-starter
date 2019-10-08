@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Account
+      My Account
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -20,10 +20,10 @@
   <div>
     <ion-list>
       <ion-item>
-        <strong>username</strong> {{ user.getUser().getUsername() }}
+        <strong text-capitalize>username:</strong> {{ user.getUser().getUsername() }}
       </ion-item>
       <ion-item *ngFor="let attr of attributes">
-        <strong>{{ attr.getName() }}</strong> {{ attr.getValue() }}
+        <strong text-capitalize>{{ attr.getName() }}:</strong> {{ attr.getValue() }}
       </ion-item>
     </ion-list>
   </div>
